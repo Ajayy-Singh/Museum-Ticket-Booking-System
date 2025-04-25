@@ -50,7 +50,7 @@ document.getElementById('submitSignUp').addEventListener('click', (event) => {
       return setDoc(doc(db, "users", user.uid), userData);
     })
     .then(() => {
-      window.location.href = 'index.html';
+      window.location.href = 'Main.html';
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -73,7 +73,7 @@ document.getElementById('submitSignIn').addEventListener('click', (event) => {
       const user = userCredential.user;
       localStorage.setItem('loggedInUserId', user.uid);
       showMessage('Login is Successful', 'signInMessage');
-      window.location.href = 'index.html';
+      window.location.href = 'Main.html';
       // window.location.href = 'ticket.html';
     })
     .catch((error) => {
