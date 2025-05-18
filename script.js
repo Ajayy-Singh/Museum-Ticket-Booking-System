@@ -33,7 +33,7 @@ document.getElementById('rzp-button').addEventListener('click', function () {
     }
 
     const options = {
-        key: "rzp_test_mSMB3Y4eC4cJaz", // Replace with your Razorpay API Key
+        key: "rzp_test_km48NHtEODzhWJ", // Replace with your Razorpay API Key
         amount: totalAmount, // Amount in paise
         currency: "INR",
         name: "Museum Ticket Payment",
